@@ -6,9 +6,8 @@ export const useDarkMode = (boolean) => {
 
   useEffect(() => {
     const grabBody = document.querySelector("body");
-    const darkModeVerify = window.localStorage.getItem(JSON.parse("darkMode"));
 
-    darkModeVerify === true
+    darkMode
       ? grabBody.classList.add("dark-mode")
       : grabBody.classList.remove("dark-mode");
   }, [darkMode]);
