@@ -12,5 +12,5 @@ export const useDarkMode = (boolean) => {
       : grabBody.classList.remove("dark-mode");
   }, [darkMode]);
 
-  return [darkMode];
+  return [darkMode, setDarkMode];
 };
